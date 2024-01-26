@@ -1,0 +1,29 @@
+<div class="form-box-reactive">
+    <form #form="ngForm" [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+      <h2>Register</h2>
+      <div class="div-form">
+        <div class="div-control">
+          <input
+            type="text"
+            placeholder="nombre"
+            class="input-key"
+            formControlName="name"
+          />
+        </div>
+  
+        <div class="div-control">
+          <input
+            type="text"
+            placeholder="password"
+            class="input-key"
+            formControlName="password"
+          />
+        </div>
+  
+        <div class="div-control">
+          <button type="submit" class="buttonSubmit">Register</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  
